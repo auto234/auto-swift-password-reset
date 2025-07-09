@@ -4,7 +4,7 @@ const token     = hash.access_token;
 const errorCode = hash.error_code;
 
 /* ---------- Link expired or invalid ---------- */
-if (errorCode === 'otp_expired' || errorCode === 'invalid_link') {
+if (errorCode === 'otp_expired' || errorCode === 'invalid_link' || !token) {
   location.href = '/reset.html#expired=1';
   throw new Error('Redirecting because link is expired/invalid');
 }
