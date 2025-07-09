@@ -1,12 +1,22 @@
 <!DOCTYPE html>
 <html>
-<head><meta charset="utf-8" /><title>Forgot password</title></head>
+<head>
+  <meta charset="utf-8" />
+  <title>Forgot password</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
 <body>
-  <h2>Forgot password</h2>
-  <input id="email" type="email" placeholder="you@example.com" />
-  <button onclick="send()">Send reset link</button>
-  <p id="msg"></p>
-  
+  <div class="container">
+    <h2>Forgot password</h2>
+
+    <!-- message shown when link is expired -->
+    <p id="expired-msg"></p>
+
+    <input id="email" type="email" placeholder="you@example.com" />
+    <button onclick="send()">Send reset link</button>
+
+    <p id="msg"></p>
+  </div>
   <script src="js/hash.js"></script>
   <script type="module" src="js/request-reset.js"></script>
 </body>
