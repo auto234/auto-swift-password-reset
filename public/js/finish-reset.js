@@ -37,6 +37,9 @@ if (!token) {
       return;
     }
 
+    
+    show('Processing...');
+
     const r = await fetch('/api/finish-reset', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
