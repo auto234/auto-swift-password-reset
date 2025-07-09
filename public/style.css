@@ -1,0 +1,73 @@
+/* ------------- Global styles ------------- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: #fff;
+}
+
+/* ------------- Card container ------------- */
+.container {
+  width: 100%;
+  max-width: 420px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  padding: 2.5rem 2rem;
+  border-radius: 14px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+}
+
+/* ------------- Typography ------------- */
+h2 {
+  text-align: center;
+  margin: 0 0 1.5rem;
+  font-weight: 600;
+}
+
+/* ------------- Inputs & button ------------- */
+input {
+  width: 100%;
+  padding: 0.9rem 1rem;
+  margin: 0.8rem 0 1rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+button {
+  width: 100%;
+  padding: 0.9rem 1rem;
+  border: none;
+  border-radius: 8px;
+  background: #00c9a7;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.25s ease;
+}
+
+button:hover {
+  background: #00b398;
+}
+
+/* ------------- Messages ------------- */
+#msg,
+#expired-msg {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 0.95rem;
+}
+#expired-msg {
+  color: #ffd868;
+}
